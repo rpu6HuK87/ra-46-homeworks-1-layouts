@@ -1,13 +1,89 @@
-body {
+body,
+html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+  height: 100%;
+  padding: 0;
+  overflow-x:hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.App {
+  display: block;
+  width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.switch-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-bottom: 30px;
+}
+.switch-button span {  
+  font-size: 3em;
+  color:#999;
+  cursor: pointer;
+}
+
+.card-container {
+  display: inline-block;
+  column-count: 3;
+  column-gap: 25px;
+  overflow: hidden;
+}
+.card {
+  margin: 0;
+  display: grid;
+  margin-bottom: 20px;
+  break-inside: avoid;
+  position: relative;
+  
+}
+.card img {
+  max-width: 300px;
+  box-shadow: 0 10px 10px #ccc;
+}
+.card .cardHead {
+  position: absolute;
+  top:15px;
+  width: 100%;
+  text-align: center;
+}
+.card .cardFooter {
+  position: absolute;
+  bottom:15px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+}
+.button {
+  color: red;
+  border: 1px solid red;
+  border-radius: 30px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.container-list {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f5f5f5;
+  margin-bottom: 3px;
+}
+
+.container-list img {
+  max-width: 100px;  
 }
